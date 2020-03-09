@@ -1,11 +1,12 @@
 
-
-
 body {
     font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size:14px;
-    margin:0;
+    margin-left:auto;
+    margin-right:auto;
     padding:0;
+    width: 990px;
+    position: center;
 }
 
 .logo {
@@ -30,7 +31,7 @@ body {
 
 .stripe {
     background-color:#337ab7;
-    width:100%;
+    width:auto;
     height:15px;
 
 }
@@ -44,10 +45,62 @@ body {
 
 footer {
     background-color:#f8f9fa;
+    width:auto;
     height: 150px;
     padding-top:20px;
 }
 
+nav {
+    top: 0;
+    left: 0;
+    padding: 0 18px;
+    background-color: white;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+
+
+nav ul {
+    display: inline-block;
+    list-style: none;
+    padding: 12px 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    position: relative;
+    padding: 12px 20px;
+}
+
+nav ul li:hover {
+    background-color: white;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li:hover ul {
+    display: grid;
+    flex-direction: column;
+}
+
+nav ul li ul li:hover {
+    background-color: cornflowerblue;
+    color: white;
+}
 
 
 
